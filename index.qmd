@@ -4,8 +4,6 @@ subtitle: "Infant-Directed Speech Preference"
 description: |
   In the first ManyBabies project, we replicated a robust finding from developmental literature: infants’ preference for infant-directed speech (IDS) over adult-directed speech (ADS). IDS is characterized by a higher pitch, greater pitch excursions, and shorter utterances when compared to ADS. Exposure to IDS has been shown to improve word segmentation and word learning. We asked if infants have a preference for IDS, and how this preference varies across age, native language background, and method.
   Sixty-nine labs from 16 countries participated and collected data from 2,329 infants (range: 3-15 months old). We focused on three primary methods for assessing infants’ interest: single-screen central fixation, eye tracking, and the head-turn preference procedure (HPP).
-title-block-banner: "#9687A3"
-title-block-banner-color: white
 ---
 
 ```{r setup}
@@ -29,8 +27,6 @@ forest_data <- forest_table |>
          y_label = paste(lab, age_label)) |>
   arrange(Method, desc(meta), effects) |>
   mutate(order = 1:n())
-  # arrange(age_group)
-  # rename_with(\(s) str_replace_all(s, "\\.", "_"), .cols = everything())
 
 ojs_define(forest_data = forest_data)
 ```
@@ -198,7 +194,7 @@ Plot.plot({
 
 ### Data
 
-<iframe width="100%" height="500" allowfullscreen src="https://redivis.com/embed/tables/wjz0-3avcrf1gh" style="border:0;"></iframe>
+{{< redivis-table mikabr.mb1.mb1_meta_output >}}
 
 :::
 
@@ -282,9 +278,9 @@ Plot.plot({
 
 ## Data
 
-<iframe width="100%" height="500" allowfullscreen src="https://redivis.com/embed/tables/hkp7-3m6rj4xt8" style="border:0;"></iframe>
+{{< redivis-table mikabr.mb1.mb1_lt_model_output >}}
 
-<iframe width="100%" height="500" allowfullscreen src="https://redivis.com/embed/tables/nh93-awnnkv49p" style="border:0;"></iframe>
+{{< redivis-table datapages.many_babies_1.03_data_trial_main >}}
 
 :::
 

@@ -1,18 +1,20 @@
 project:
-  type: website
+  type: datapage
 
 website:
   title: "ManyBabies"
-  navbar:
-    left:
-      - href: index.qmd
-        text: MB1
+  navbar: false
 
 format:
-  html:
-    theme: [cosmo, styles.scss]
-    fontsize: 1em
-    toc: false
+  datapage-html:
+    theme: theme.scss
+    mainfont: Open Sans
+    title-block-banner: "#036C9A"
+    title-block-banner-color: white
+    grid:
+      sidebar-width: 0px
+      body-width: 800px
+      margin-width: 0px
 
 execute: 
   echo: false

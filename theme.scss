@@ -2,7 +2,11 @@
 
 /*-- scss:defaults --*/
 
+$primary: #036C9A;
+
 /*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 .tab-pane > p { padding-top: 0em; }
 
@@ -19,8 +23,8 @@
     padding-bottom: 0.25rem;
     border-radius: var(--quarto-border-radius);
     
-    &.active { background-color: #9687A3; }
+    &.active { background-color: #036C9A; }
   }
 }
 
-.nav-link, .nav-link:hover { color: #7f3b97; }
+.nav-link, .nav-link:hover { color: #036C9A; }
