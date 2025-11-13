@@ -6,3 +6,5 @@ _site/
 .Renviron
 
 .DS_Store
+
+**/*.quarto_ipynb
