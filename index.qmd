@@ -2,7 +2,7 @@
 title: "ManyBabies 1"
 subtitle: "Infant-Directed Speech Preference"
 description: |
-  DEMO
+  DEMO try1
 ---
 
 ```{r setup}
